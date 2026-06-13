@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital_Cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="main">
+
+    <div class="nevbar">
+        <img src="logo.jpg" class="logo">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero-content">
+        <div class="info">
+            <h2>Hi, I am <span>Ranjan</span>,</h2>
+            <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
+            <h2>I have skills in HTML, CSS, and JavaScript,
+                and I enjoy designing clean, user-friendly
+                web pages that provide a great user experience.</h2>
+            <a href="resume.html">View Resume</a>
+        </div>
+        <div class="image">
+            <img src="ranjan.jpg" class="girl">
+        </div>
+    </div>
+
+    <div class="icons">
+        <a href="https://www.facebook.com/ranzankaphyle.kafleranzzan"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/ran_zzan7/"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/ranjan-kafle-275892371/"><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+
+   </div>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script>
+     const toggle = document.getElementById('menuToggle');
+     const nav = document.getElementById('navLinks');
+     toggle.addEventListener('click', () => {
+       toggle.classList.toggle('open');
+       nav.classList.toggle('open');
+     });
+   </script>
+</body>
+</html>
